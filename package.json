@@ -1,0 +1,19 @@
+{
+    "name": "tsconfig-uvarovag",
+    "version": "1.0.0",
+    "main": "tsconfig.json",
+    "scripts": {
+        "login": "npm login",
+        "publish": "npm publish --access public",
+        "fix": "npm pkg fix"
+    },
+    "keywords": ["typescript", "tsconfig", "shared-config"],
+    "author": "uvarovag",
+    "license": "MIT",
+    "description": "tsconfig-uvarovag",
+    "homepage": "https://github.com/uvarovag/tsconfig-uvarovag/blob/master/README.md",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/uvarovag/tsconfig-uvarovag.git"
+    }
+}
