@@ -1,36 +1,46 @@
-# tsconfig-uvarovag
+# tsconfig-react
 
-## for use in project
+A shared `tsconfig.json` configuration for React projects using TypeScript.
 
-### 1. install dependencies
+## Installation
+
+To use this configuration in your project, install the necessary dependencies:
 
 ```bash
-npm install --save-dev tsconfig-uvarovag typescript ts-node
+npm install --save-dev @uvarovag/tsconfig-react typescript ts-node
 ```
 
-### 2. create tsconfig.json
+## Usage
+
+### Step 1: Create a tsconfig.json file
 
 ```json
 {
-    "extends": "tsconfig-uvarovag",
-    // Файлы и папки, которые будут включены в процесс компиляции
+    "extends": "@uvarovag/tsconfig-react",
+    // Files and folders to be included in the compilation process
     "include": [
-        "src" // Только файлы в папке "src"
+        "src" // Only files in the "src" folder
     ],
-    // Файлы и папки, которые исключаются из процесса компиляции
+    // Files and folders to be excluded from the compilation process
     "exclude": [
-        "node_modules", // Игнорирует папку "node_modules"
-        "dist" // Игнорирует папку "dist" (собранный код)
+        "node_modules", // Ignores the "node_modules" folder
+        "dist" // Ignores the "dist" folder (compiled code)
     ],
     "compilerOptions": {
-        // Указывает папку, куда будет компилироваться код
+        // Specifies the folder where the compiled code will be output
         "outDir": "./dist/",
-        // Устанавливает базовый путь для всех относительных путей
+        // Sets the base path for all relative paths
         "baseUrl": "./",
-        // Настраивает алиасы путей для удобного импорта модулей
+        // Configures path aliases for convenient module imports
         "paths": {
-            "*": ["./src/*"] // Все импорты начинаются с "src"
+            "*": ["./src/*"] // All imports start from "src"
         }
     }
 }
+```
+
+### Step 2: Compile your project
+
+```bash
+npx tsc
 ```

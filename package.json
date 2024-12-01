@@ -1,6 +1,6 @@
 {
-    "name": "tsconfig-uvarovag",
-    "version": "1.0.1",
+    "name": "@uvarovag/tsconfig-react",
+    "version": "1.0.0",
     "main": "tsconfig.json",
     "scripts": {
         "login": "npm login",
@@ -12,13 +12,13 @@
         "tsconfig",
         "shared-config"
     ],
-    "author": "uvarovag",
+    "author": "@uvarovag",
     "license": "MIT",
-    "description": "tsconfig-uvarovag",
-    "homepage": "https://github.com/uvarovag/tsconfig-uvarovag/blob/master/README.md",
+    "description": "tsconfig-react",
+    "homepage": "https://github.com/uvarovag/tsconfig-react/blob/master/README.md",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/uvarovag/tsconfig-uvarovag.git"
+        "url": "git+https://github.com/uvarovag/tsconfig-react.git"
     },
     "peerDependencies": {
         "ts-node": "^10.9.2",
