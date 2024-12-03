@@ -24,6 +24,8 @@
     "strict": true,
     // Обеспечивает совместимость между CommonJS и ES модулями
     "esModuleInterop": true,
+    // Импорт JSON модулей
+    "resolveJsonModule": true,
     // Требует одинаковый регистр букв для всех файлов
     "forceConsistentCasingInFileNames": true
   },
