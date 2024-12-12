@@ -1,39 +1,35 @@
 {
-  "compilerOptions": {
-    // Запрещает использование "any" без явного указания типа
-    "noImplicitAny": true,
-    // Требует строгой проверки на null и undefined
-    "strictNullChecks": true,
-    // Указывает формат модулей для компиляции
-    "module": "ESNext", // Использует последний стандарт ECMAScript для модулей
-    // Указывает целевую версию ECMAScript для компиляции
-    "target": "es6", // Генерирует код для ES6 (ECMAScript 2015)
-    // Указывает, как JSX будет преобразовываться
-    "jsx": "react-jsx", // Использует React 17+ с автоматическим импортом JSX
-    // Разрешает доступ к глобальным объектам UMD
-    "allowUmdGlobalAccess": true,
-    // Позволяет компилировать JavaScript-файлы вместе с TypeScript
-    "allowJs": true,
-    // Указывает стратегию резолвинга модулей
-    "moduleResolution": "node", // Использует Node.js-стиль резолвинга модулей
-    // Пропускает проверку типов в библиотеках (ускоряет компиляцию)
-    "skipLibCheck": true,
-    // Разрешает использовать синтетический импорт по умолчанию
-    "allowSyntheticDefaultImports": true,
-    // Включает строгий режим компиляции, объединяя несколько строгих проверок
-    "strict": true,
-    // Обеспечивает совместимость между CommonJS и ES модулями
-    "esModuleInterop": true,
-    // Импорт JSON модулей
-    "resolveJsonModule": true,
-    // Требует одинаковый регистр букв для всех файлов
-    "forceConsistentCasingInFileNames": true
-  },
-  "ts-node": {
     "compilerOptions": {
-      // Указывает, что модули TypeScript должны компилироваться в формате CommonJS
-      // Это необходимо для совместимости с инструментами, которые ожидают CommonJS
-      "module": "CommonJS"
+        // Включает строгий режим компиляции, объединяя несколько строгих проверок
+        "strict": true,
+        // Указывает формат модулей для компиляции
+        "module": "ESNext", // Использует последний стандарт ECMAScript для модулей
+        // Указывает целевую версию ECMAScript для компиляции
+        "target": "es6", // Генерирует код для ES6 (ECMAScript 2015)
+        // Указывает, как JSX будет преобразовываться
+        "jsx": "react-jsx", // Использует React 17+ с автоматическим импортом JSX
+        // Разрешает доступ к глобальным объектам UMD
+        "allowUmdGlobalAccess": true,
+        // Позволяет компилировать JavaScript-файлы вместе с TypeScript
+        "allowJs": true,
+        // Указывает стратегию резолвинга модулей
+        "moduleResolution": "node", // Использует Node.js-стиль резолвинга модулей
+        // Пропускает проверку типов в библиотеках (ускоряет компиляцию)
+        "skipLibCheck": true,
+        // Разрешает использовать синтетический импорт по умолчанию
+        "allowSyntheticDefaultImports": true,
+        // Обеспечивает совместимость между CommonJS и ES модулями
+        "esModuleInterop": true,
+        // Импорт JSON модулей
+        "resolveJsonModule": true,
+        // Требует одинаковый регистр букв для всех файлов
+        "forceConsistentCasingInFileNames": true
+    },
+    "ts-node": {
+        "compilerOptions": {
+            // Указывает, что модули TypeScript должны компилироваться в формате CommonJS
+            // Это необходимо для совместимости с инструментами, которые ожидают CommonJS
+            "module": "CommonJS"
+        }
     }
-  }
 }

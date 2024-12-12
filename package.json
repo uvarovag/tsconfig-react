@@ -1,6 +1,6 @@
 {
     "name": "@uvarovag/tsconfig-react",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "main": "tsconfig.json",
     "scripts": {
         "login": "npm login",
@@ -23,5 +23,9 @@
     "peerDependencies": {
         "ts-node": "^10.9.2",
         "typescript": "^5.7.2"
+    },
+    "devDependencies": {
+        "@uvarovag/prettier-config": "^1.0.3",
+        "prettier": "^3.4.2"
     }
 }
