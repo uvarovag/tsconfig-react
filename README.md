@@ -44,7 +44,7 @@ npm install --save-dev @uvarovag/tsconfig-react typescript ts-node
 
 ```ts
 declare const IS_DEV: boolean
-declare const BASE_URL: boolean
+declare const BASE_URL: string
 ```
 
 ### Step 3: Compile your project

@@ -1,6 +1,6 @@
 {
     "name": "@uvarovag/tsconfig-react",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "main": "tsconfig.json",
     "scripts": {
         "fix": "prettier --write '**/*.{ts,tsx,js,json,css,html,md}' && npm pkg fix",
