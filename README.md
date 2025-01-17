@@ -1,6 +1,6 @@
 # tsconfig-react
 
-A shared `tsconfig.json` configuration for React projects using TypeScript.
+Shared TypeScript configuration for React projects using TypeScript.
 
 ## Installation
 
@@ -19,7 +19,8 @@ npm install --save-dev @uvarovag/tsconfig-react typescript ts-node
     "extends": "@uvarovag/tsconfig-react",
     // Files and folders to be included in the compilation process
     "include": [
-        "src" // Only files in the "src" folder
+        "src", // Only files in the "src" folder
+        "global.d.ts" // Includes global type definitions
     ],
     // Files and folders to be excluded from the compilation process
     "exclude": [
@@ -39,7 +40,14 @@ npm install --save-dev @uvarovag/tsconfig-react typescript ts-node
 }
 ```
 
-### Step 2: Compile your project
+### Step 2: Create a global.d.ts file
+
+```ts
+declare const IS_DEV: boolean
+declare const BASE_URL: boolean
+```
+
+### Step 3: Compile your project
 
 ```bash
 npx tsc

@@ -1,11 +1,11 @@
 {
     "name": "@uvarovag/tsconfig-react",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "main": "tsconfig.json",
     "scripts": {
+        "fix": "prettier --write '**/*.{ts,tsx,js,json,css,html,md}' && npm pkg fix",
         "login": "npm login",
-        "publish": "npm publish --access public",
-        "fix": "npm pkg fix"
+        "publish": "npm publish --access public"
     },
     "keywords": [
         "typescript",
@@ -14,7 +14,7 @@
     ],
     "author": "@uvarovag",
     "license": "MIT",
-    "description": "tsconfig-react",
+    "description": "Shared TypeScript configuration for React projects using TypeScript",
     "homepage": "https://github.com/uvarovag/tsconfig-react/blob/master/README.md",
     "repository": {
         "type": "git",
