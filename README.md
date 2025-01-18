@@ -12,7 +12,7 @@ npm install --save-dev @uvarovag/tsconfig-react typescript ts-node
 
 ## Usage
 
-### Step 1: Create a tsconfig.json file
+### Step 1: Create a `tsconfig.json` file
 
 ```json
 {
@@ -40,7 +40,7 @@ npm install --save-dev @uvarovag/tsconfig-react typescript ts-node
 }
 ```
 
-### Step 2: Create a global.d.ts file
+### Step 2: Create a `global.d.ts` file
 
 ```ts
 declare const IS_DEV: boolean
