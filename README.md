@@ -19,8 +19,7 @@ npm install --save-dev @uvarovag/tsconfig-react typescript ts-node
     "extends": "@uvarovag/tsconfig-react",
     // Files and folders to be included in the compilation process
     "include": [
-        "src", // Only files in the "src" folder
-        "global.d.ts" // Includes global type definitions
+        "src" // Only files in the "src" folder
     ],
     // Files and folders to be excluded from the compilation process
     "exclude": [
@@ -28,8 +27,6 @@ npm install --save-dev @uvarovag/tsconfig-react typescript ts-node
         "dist" // Ignores the "dist" folder (compiled code)
     ],
     "compilerOptions": {
-        // Specifies the folder where the compiled code will be output
-        "outDir": "./dist/",
         // Sets the base path for all relative paths
         "baseUrl": "./",
         // Configures path aliases for convenient module imports
@@ -40,14 +37,7 @@ npm install --save-dev @uvarovag/tsconfig-react typescript ts-node
 }
 ```
 
-### Step 2: Create a `global.d.ts` file
-
-```ts
-declare const IS_DEV: boolean
-declare const BASE_URL: string
-```
-
-### Step 3: Compile your project
+### Step 2: Compile your project
 
 ```bash
 npx tsc
