@@ -1,6 +1,6 @@
 {
     "name": "@uvarovag/tsconfig-react",
-    "version": "1.0.5",
+    "version": "1.1.0",
     "description": "Shared TypeScript configuration for React projects using TypeScript",
     "main": "tsconfig.json",
     "scripts": {
