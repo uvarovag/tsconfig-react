@@ -4,7 +4,7 @@
     "description": "Shared TypeScript configuration for React projects using TypeScript",
     "main": "tsconfig.json",
     "scripts": {
-        "fix": "prettier --write '**/*.{ts,tsx,js,json,css,html,md}' && npm pkg fix",
+        "fix": "prettier --write '**/*.{ts,tsx,js,json,css,html,md}'",
         "deploy": "npm publish",
         "prepare": "husky"
     },
